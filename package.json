@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -29,7 +29,7 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "calculate",
+  "name": "@princedev/calculate",
   "author": "Prince Neil Cedrick Castro",
   "module": "dist/calculate.esm.js",
   "devDependencies": {
