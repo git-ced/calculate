@@ -107,6 +107,17 @@ quotient(8, 4, 2);
 // output: 1
 ```
 
+Getting the remainder of given numbers.
+```javascript
+import { remainder } from '@princedev/calculate';
+
+remainder(12,3);
+// output: 0
+
+remainder(4, 3, 3);
+// output: 1
+```
+
 **Note** The functions above always reads the parameter/numbers given from left to right.
 
 ## Authors
