@@ -1,4 +1,4 @@
-import { sum, difference } from '../src';
+import { sum, difference, product } from '../src';
 
 describe('Math', () => {
   it('Sum', () => {
@@ -6,5 +6,8 @@ describe('Math', () => {
   });
   it('Difference', () => {
     expect(difference(120, 200, -40)).toEqual(-40);
+  });
+  it('Product', () => {
+    expect(product(-2, -4, 6)).toEqual(48);
   });
 });
