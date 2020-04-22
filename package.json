@@ -43,5 +43,7 @@
   "bugs": {
     "url": "https://github.com/git-ced/calculate/issues"
   },
-  "homepage": "https://github.com/git-ced/calculate"
+  "homepage": "https://github.com/git-ced/calculate",
+  "keywords": ["math", "statistics", "calculate", "compute"],
+  "description": "Fast, lightweight, and extinsible mathematical and statistical functions."
 }

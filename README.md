@@ -1,10 +1,10 @@
 # @princedev/calculate
-> Fast, efficient, and extinsible mathematical and statistical functions.
+> Fast, lightweight, and extinsible mathematical and statistical functions.
 
 [![NPM](https://img.shields.io/npm/v/@princedev/calculate.svg)](https://www.npmjs.com/package/@princedev/calculate)
 ![npm bundle size (scoped)](https://img.shields.io/bundlephobia/min/@princedev/calculate)
-![Libraries.io dependency status for latest release, scoped npm package](https://img.shields.io/librariesio/release/npm/@princedev/calculate) 
-![NPM](https://img.shields.io/npm/l/@princedev/calculate) 
+![Libraries.io dependency status for latest release, scoped npm package](https://img.shields.io/librariesio/release/npm/@princedev/calculate)
+![NPM](https://img.shields.io/npm/l/@princedev/calculate)
 
 ## Table of Contents
  - [Installation](#installation)
