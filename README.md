@@ -74,6 +74,17 @@ calculate.sum(12,24,36,48,60,72,84,96,108,120,132)
 // output: 792
 ```
 
+Getting the difference of given numbers.
+```javascript
+import { difference } from '@princedev/calculate';
+
+difference(12,24);
+// output: -12
+
+difference(24,12,8)l
+// output: 4
+```
+
 ## Authors
 
 - [Prince Neil Cedrick Castro](https://github.com/git-ced/) - Initial work
