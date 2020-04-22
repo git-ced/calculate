@@ -50,7 +50,7 @@ import { sum } from '@princedev/calculate';
 
 ## Usage
 
-Let's start with basic arithmetics.
+**Let's start with basic arithmetics.**
 
 Getting the sum of given numbers.
 ```javascript
@@ -116,6 +116,19 @@ remainder(12,3);
 
 remainder(4, 3, 3);
 // output: 1
+```
+
+**Now with basic statistics.**
+
+Getting the mean of given numbers.
+```javascript
+import { mean } from '@princedev/calculate';
+
+mean(12,4);
+// output: 8
+
+mean(2, 4, 6);
+// output: 4
 ```
 
 **Note** The functions above always reads the parameter/numbers given from left to right.
