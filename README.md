@@ -85,6 +85,17 @@ difference(24,12,8)l
 // output: 4
 ```
 
+Getting the product of given numbers.
+```javascript
+import { product } from '@princedev/calculate';
+
+product(3,4);
+// output: 12
+
+product(-2,-4,6);
+// output: 48
+```
+
 ## Authors
 
 - [Prince Neil Cedrick Castro](https://github.com/git-ced/) - Initial work
