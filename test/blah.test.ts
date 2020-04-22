@@ -1,4 +1,4 @@
-import { sum, difference, product, quotient } from '../src';
+import { sum, difference, product, quotient, remainder } from '../src';
 
 describe('Math', () => {
   it('Sum', () => {
@@ -12,5 +12,8 @@ describe('Math', () => {
   });
   it('Quotient', () => {
     expect(quotient(8, 4, 2)).toEqual(1);
+  });
+  it('Remainder', () => {
+    expect(remainder(8, 4, 2)).toEqual(0);
   });
 });
