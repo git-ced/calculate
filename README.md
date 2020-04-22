@@ -96,6 +96,19 @@ product(-2,-4,6);
 // output: 48
 ```
 
+Getting the quotient of given numbers.
+```javascript
+import { quotient } from '@princedev/calculate';
+
+quotient(12,3);
+// output: 4
+
+quotient(8, 4, 2);
+// output: 1
+```
+
+**Note** The functions above always reads the parameter/numbers given from left to right.
+
 ## Authors
 
 - [Prince Neil Cedrick Castro](https://github.com/git-ced/) - Initial work
