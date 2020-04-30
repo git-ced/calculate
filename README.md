@@ -81,7 +81,7 @@ import { difference } from '@princedev/calculate';
 difference(12,24);
 // output: -12
 
-difference(24,12,8)l
+difference(24,12,8);
 // output: 4
 ```
 
