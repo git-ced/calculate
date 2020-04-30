@@ -1,5 +1,7 @@
+// ANCHOR Type Definition -----------------------------------------------------/
 export type n = number;
 
+// ANCHOR Calculate the sum ---------------------------------------------------/
 export const sum = function(
   a: n,
   b: n,
@@ -48,6 +50,7 @@ export const sum = function(
   }
 };
 
+// ANCHOR Calculate the difference --------------------------------------------/
 export const difference = function(
   a: n,
   b: n,
@@ -96,6 +99,7 @@ export const difference = function(
   }
 };
 
+// ANCHOR Calculate the product -----------------------------------------------/
 export const product = function(
   a: n,
   b: n,
@@ -144,6 +148,7 @@ export const product = function(
   }
 };
 
+// ANCHOR Calculate the quotient ----------------------------------------------/
 export const quotient = function(
   a: n,
   b: n,
@@ -192,6 +197,7 @@ export const quotient = function(
   }
 };
 
+// ANCHOR Calculate the remainder ---------------------------------------------/
 export const remainder = function(
   a: n,
   b: n,
@@ -240,6 +246,7 @@ export const remainder = function(
   }
 };
 
+// ANCHOR Calculate the mean --------------------------------------------------/
 export const mean = function(
   a: n,
   b: n,
