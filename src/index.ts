@@ -1,5 +1,6 @@
 // ANCHOR Type Definition -----------------------------------------------------/
 export type n = number;
+export type s = string;
 
 // ANCHOR Calculate the sum ---------------------------------------------------/
 export const sum = function(
@@ -293,4 +294,18 @@ export const mean = function(
       return result / argLen;
     }
   }
+};
+
+export const sort = function(...args: (n | s)[]) {
+  let length = args.length;
+  for (let i = 1; i < length; i++) {
+    let key = args[i];
+    let j = i - 1;
+    while (j >= 0 && args[j] > key) {
+      args[j + 1] = args[j];
+      j = j - 1;
+    }
+    args[j + 1] = key;
+  }
+  return args;
 };
