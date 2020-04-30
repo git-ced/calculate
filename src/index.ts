@@ -16,8 +16,9 @@ export const sum = function(
   const argLen = arguments.length;
   switch (argLen) {
     case 0:
+      return 0;
     case 1:
-      throw new Error('Expected of having at least two values to add');
+      return a;
     case 2:
       return a + b;
     case 3:
@@ -63,8 +64,9 @@ export const difference = function(
   const argLen = arguments.length;
   switch (argLen) {
     case 0:
+      return 0;
     case 1:
-      throw new Error('Expected of having at least two values to subtract');
+      return a;
     case 2:
       return a - b;
     case 3:
@@ -110,8 +112,9 @@ export const product = function(
   const argLen = arguments.length;
   switch (argLen) {
     case 0:
+      return 0;
     case 1:
-      throw new Error('Expected of having at least two values to multiply');
+      return a;
     case 2:
       return a * b;
     case 3:
@@ -157,8 +160,9 @@ export const quotient = function(
   const argLen = arguments.length;
   switch (argLen) {
     case 0:
+      return 0;
     case 1:
-      throw new Error('Expected of having at least two values to divide');
+      return a;
     case 2:
       return a / b;
     case 3:
@@ -204,8 +208,9 @@ export const remainder = function(
   const argLen = arguments.length;
   switch (argLen) {
     case 0:
+      return 0;
     case 1:
-      throw new Error('Expected of having at least two values to compute');
+      return a;
     case 2:
       return a % b;
     case 3:
@@ -251,8 +256,9 @@ export const mean = function(
   const argLen = arguments.length;
   switch (argLen) {
     case 0:
+      return 0;
     case 1:
-      throw new Error('Expected of having at least two values to average');
+      return a;
     case 2:
       return (a + b) / 2;
     case 3:
