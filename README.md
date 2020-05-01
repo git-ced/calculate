@@ -137,6 +137,23 @@ mean(...[2, 4, 6]);
 // output: 4
 ```
 
+Getting the median of given numbers.
+```javascript
+import { median } from '@princedev/calculate';
+
+median(21, 4, 8, 6);
+// output: 7
+
+median(21, 4, 8, 6, 12);
+// output: 8
+
+median(...[21, 4, 8, 6]);
+// output: 7
+
+median(...[21, 4, 8, 6, 12]);
+// output: 8
+```
+
 ### Sorting numbers and strings
 
 Sorting numbers
