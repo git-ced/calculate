@@ -32,8 +32,11 @@ describe('Statistics', () => {
   it('Mean', () => {
     expect(mean(2, 4, 6)).toEqual(4);
   });
-  it('Median', () => {
+  it('Median Even', () => {
     expect(median(21, 4, 8, 6)).toEqual(7);
+  });
+  it('Median Odd', () => {
+    expect(median(21, 4, 8, 6, 12)).toEqual(8);
   });
 });
 

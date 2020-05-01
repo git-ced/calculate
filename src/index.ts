@@ -251,7 +251,7 @@ export function remainder(
 
 // ANCHOR Sort given values ---------------------------------------------------/
 export function sort(...args: s[] | n[]) {
-  smartSort(args);
+  return smartSort(args);
 }
 
 // ANCHOR Calculate the mean --------------------------------------------------/
