@@ -2,10 +2,10 @@
 import { n, s } from 'types';
 
 // ANCHOR Sort
-import { quicksort, insertionSort } from './sort';
+import { smartSort } from './sort';
 
 // ANCHOR Calculate the sum ---------------------------------------------------/
-export const sum = function(
+export function sum(
   a: n,
   b: n,
   c: n = 0,
@@ -51,10 +51,10 @@ export const sum = function(
       return result;
     }
   }
-};
+}
 
 // ANCHOR Calculate the difference --------------------------------------------/
-export const difference = function(
+export function difference(
   a: n,
   b: n,
   c: n = 0,
@@ -100,10 +100,10 @@ export const difference = function(
       return result;
     }
   }
-};
+}
 
 // ANCHOR Calculate the product -----------------------------------------------/
-export const product = function(
+export function product(
   a: n,
   b: n,
   c: n = 1,
@@ -149,10 +149,10 @@ export const product = function(
       return result;
     }
   }
-};
+}
 
 // ANCHOR Calculate the quotient ----------------------------------------------/
-export const quotient = function(
+export function quotient(
   a: n,
   b: n,
   c: n = 1,
@@ -198,10 +198,10 @@ export const quotient = function(
       return result;
     }
   }
-};
+}
 
 // ANCHOR Calculate the remainder ---------------------------------------------/
-export const remainder = function(
+export function remainder(
   a: n,
   b: n,
   c: n = 1,
@@ -247,10 +247,15 @@ export const remainder = function(
       return result;
     }
   }
-};
+}
+
+// ANCHOR Sort given values ---------------------------------------------------/
+export function sort(...args: s[] | n[]) {
+  smartSort(args);
+}
 
 // ANCHOR Calculate the mean --------------------------------------------------/
-export const mean = function(
+export function mean(
   a: n,
   b: n,
   c: n = 0,
@@ -296,15 +301,16 @@ export const mean = function(
       return result / argLen;
     }
   }
-};
+}
 
-// ANCHOR Sort given values ---------------------------------------------------/
-export const sort = function(...args: s[] | n[]) {
-  const len = args.length;
+// ANCHOR Calculate the median ------------------------------------------------/
+export function median(...args: n[]) {
+  const length = args.length;
+  smartSort(args);
 
-  if (len < 400) {
-    return insertionSort(args);
+  if (length % 2 === 0) {
+    return (args[length / 2 - 1] + args[length / 2]) / 2;
   }
 
-  return quicksort(args);
-};
+  return args[(length - 1) / 2];
+}

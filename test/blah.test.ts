@@ -1,6 +1,14 @@
-import { sort } from './../src/index';
 import { insertionSort, quicksort } from './../src/sort';
-import { sum, difference, product, quotient, remainder, mean } from '../src';
+import {
+  sum,
+  difference,
+  product,
+  quotient,
+  remainder,
+  mean,
+  median,
+  sort,
+} from '../src';
 
 describe('Math', () => {
   it('Sum', () => {
@@ -23,6 +31,9 @@ describe('Math', () => {
 describe('Statistics', () => {
   it('Mean', () => {
     expect(mean(2, 4, 6)).toEqual(4);
+  });
+  it('Median', () => {
+    expect(median(21, 4, 8, 6)).toEqual(7);
   });
 });
 

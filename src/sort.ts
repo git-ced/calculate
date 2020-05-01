@@ -2,7 +2,7 @@
 import { s, n } from 'types';
 
 // ANCHOR Sort with insertion sort --------------------------------------------/
-export const insertionSort = function(args: s[] | n[]) {
+export function insertionSort(args: s[] | n[]) {
   let length = args.length;
   for (let i = 1; i < length; i++) {
     let key = args[i];
@@ -14,15 +14,15 @@ export const insertionSort = function(args: s[] | n[]) {
     args[j + 1] = key;
   }
   return args;
-};
+}
 
 // ANCHOR Sort with quick sort ------------------------------------------------/
-export const quicksort = function(args: s[] | n[]) {
+export function quicksort(args: s[] | n[]) {
   quicksortStep(args, 0, args.length - 1);
   return args;
-};
+}
 
-const quicksortStep = function(args: s[] | n[], left: n, right: n) {
+function quicksortStep(args: s[] | n[], left: n, right: n) {
   if (left >= right) {
     return;
   }
@@ -31,9 +31,9 @@ const quicksortStep = function(args: s[] | n[], left: n, right: n) {
   const index = partition(args, left, right, args[pivot]);
   quicksortStep(args, left, index - 1);
   quicksortStep(args, index, right);
-};
+}
 
-const partition = function(args: s[] | n[], left: n, right: n, pivot: s | n) {
+function partition(args: s[] | n[], left: n, right: n, pivot: s | n) {
   while (left <= right) {
     while (args[left] < pivot) {
       left = left + 1;
@@ -51,10 +51,21 @@ const partition = function(args: s[] | n[], left: n, right: n, pivot: s | n) {
   }
 
   return left;
-};
+}
 
-const swap = function(args: s[] | n[], i: n, j: n) {
+function swap(args: s[] | n[], i: n, j: n) {
   var a = args[i];
   args[i] = args[j];
   args[j] = a;
-};
+}
+
+// ANCHOR Sort with smart sort ------------------------------------------------/
+export function smartSort(args: s[] | n[]) {
+  const len = args.length;
+
+  if (len < 400) {
+    return insertionSort(args);
+  }
+
+  return quicksort(args);
+}
