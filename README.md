@@ -50,7 +50,7 @@ import { sum } from '@princedev/calculate';
 
 ## Usage
 
-**Let's start with basic arithmetics.**
+### Let's start with basic arithmetics
 
 Getting the sum of given numbers.
 ```javascript
@@ -59,7 +59,10 @@ import { sum } from '@princedev/calculate';
 sum(12,24);
 // output: 36
 
-sum(12,24,36,48,60,72,84,96,108,120,132)
+sum(12,24,36,48,60,72,84,96,108,120,132);
+// output: 792
+
+sum(...[12,24,36,48,60,72,84,96,108,120,132]);
 // output: 792
 ```
 
@@ -118,7 +121,7 @@ remainder(4, 3, 3);
 // output: 1
 ```
 
-**Now with basic statistics.**
+### Now with basic statistics
 
 Getting the mean of given numbers.
 ```javascript
@@ -129,6 +132,33 @@ mean(12,4);
 
 mean(2, 4, 6);
 // output: 4
+
+mean(...[2, 4, 6]);
+// output: 4
+```
+
+### Sorting numbers and strings
+
+Sorting numbers
+```javascript
+import { sort } from '@princedev/calculate'
+
+sort(6, 2, 218, 12, 523);
+// output: [2,6,12,218,523]
+
+sort(...[6,2,218,12,523]);
+// output: [2,6,12,218,523]
+```
+
+Sorting strings
+```javascript
+import { sort } from '@princedev/calculate'
+
+sort('1000', 'A100', 'B200', '2000', 'A1000');
+// output: ["1000", "2000", "A100", "A1000", "B200"]
+
+sort(...['1000', 'A100', 'B200', '2000', 'A1000']);
+// output: ["1000", "2000", "A100", "A1000", "B200"]
 ```
 
 **Note** The functions above always reads the parameter/numbers given from left to right.
