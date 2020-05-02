@@ -8,6 +8,7 @@ import {
   mean,
   median,
   sort,
+  mode,
 } from '../src';
 
 describe('Math', () => {
@@ -37,6 +38,12 @@ describe('Statistics', () => {
   });
   it('Median Odd', () => {
     expect(median(21, 4, 8, 6, 12)).toEqual(8);
+  });
+  it('Mode', () => {
+    expect(mode(2, 1, 8, 3, 2, 7, 4, 2, 6, 8)).toEqual([2]);
+  });
+  it('Mode Bi', () => {
+    expect(mode(2, 1, 8, 3, 2, 7, 8, 2, 6, 8)).toEqual([2, 8]);
   });
 });
 

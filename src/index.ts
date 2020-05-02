@@ -18,8 +18,8 @@ export function sum(
   j: n = 0,
   ...args: n[]
 ) {
-  const argLen = arguments.length;
-  switch (argLen) {
+  const argLength = arguments.length;
+  switch (argLength) {
     case 0:
       return 0;
     case 1:
@@ -43,10 +43,10 @@ export function sum(
     case 10:
       return a + b + c + d + e + f + g + h + i + j;
     default: {
-      let len = args.length;
+      let length = args.length;
       let result = a + b + c + d + e + f + g + h + i + j;
-      while (len) {
-        result += args[--len];
+      while (length) {
+        result += args[--length];
       }
       return result;
     }
@@ -67,8 +67,8 @@ export function difference(
   j: n = 0,
   ...args: n[]
 ) {
-  const argLen = arguments.length;
-  switch (argLen) {
+  const argLength = arguments.length;
+  switch (argLength) {
     case 0:
       return 0;
     case 1:
@@ -92,10 +92,10 @@ export function difference(
     case 10:
       return a - b - c - d - e - f - g - h - i - j;
     default: {
-      let len = args.length;
+      let length = args.length;
       let result = a - b - c - d - e - f - g - h - i - j;
-      while (len) {
-        result -= args[--len];
+      while (length) {
+        result -= args[--length];
       }
       return result;
     }
@@ -116,8 +116,8 @@ export function product(
   j: n = 1,
   ...args: n[]
 ) {
-  const argLen = arguments.length;
-  switch (argLen) {
+  const argLength = arguments.length;
+  switch (argLength) {
     case 0:
       return 0;
     case 1:
@@ -141,10 +141,10 @@ export function product(
     case 10:
       return a * b * c * d * e * f * g * h * i * j;
     default: {
-      let len = args.length;
+      let length = args.length;
       let result = a * b * c * d * e * f * g * h * i * j;
-      while (len) {
-        result *= args[--len];
+      while (length) {
+        result *= args[--length];
       }
       return result;
     }
@@ -165,8 +165,8 @@ export function quotient(
   j: n = 1,
   ...args: n[]
 ) {
-  const argLen = arguments.length;
-  switch (argLen) {
+  const argLength = arguments.length;
+  switch (argLength) {
     case 0:
       return 0;
     case 1:
@@ -190,10 +190,10 @@ export function quotient(
     case 10:
       return a / b / c / d / e / f / g / h / i / j;
     default: {
-      let len = args.length;
+      let length = args.length;
       let result = a / b / c / d / e / f / g / h / i / j;
-      while (len) {
-        result /= args[--len];
+      while (length) {
+        result /= args[--length];
       }
       return result;
     }
@@ -214,8 +214,8 @@ export function remainder(
   j: n = 1,
   ...args: n[]
 ) {
-  const argLen = arguments.length;
-  switch (argLen) {
+  const argLength = arguments.length;
+  switch (argLength) {
     case 0:
       return 0;
     case 1:
@@ -239,10 +239,10 @@ export function remainder(
     case 10:
       return ((((((((a % b) % c) % d) % e) % f) % g) % h) % i) % j;
     default: {
-      let len = args.length;
+      let length = args.length;
       let result = ((((((((a % b) % c) % d) % e) % f) % g) % h) % i) % j;
-      while (len) {
-        result %= args[--len];
+      while (length) {
+        result %= args[--length];
       }
       return result;
     }
@@ -268,8 +268,8 @@ export function mean(
   j: n = 0,
   ...args: n[]
 ) {
-  const argLen = arguments.length;
-  switch (argLen) {
+  const argLength = arguments.length;
+  switch (argLength) {
     case 0:
       return 0;
     case 1:
@@ -293,12 +293,12 @@ export function mean(
     case 10:
       return (a + b + c + d + e + f + g + h + i + j) / 10;
     default: {
-      let len = args.length;
+      let length = args.length;
       let result = a + b + c + d + e + f + g + h + i + j;
-      while (len) {
-        result += args[--len];
+      while (length) {
+        result += args[--length];
       }
-      return result / argLen;
+      return result / argLength;
     }
   }
 }
@@ -313,4 +313,36 @@ export function median(...args: n[]) {
   }
 
   return args[(length - 1) / 2];
+}
+
+// ANCHOR Calculate the mode --------------------------------------------------/
+export function mode(...args: n[]) {
+  let highest = 0;
+  let count: { [key: string]: n } = {};
+  let result: n[] = [];
+  let length = args.length;
+
+  while (length) {
+    const number = args[--length];
+
+    if (!count[number]) {
+      count[number] = 1;
+      highest = 1;
+      continue;
+    }
+
+    count[number] = count[number] + 1;
+
+    if (highest < count[number]) {
+      highest = count[number];
+    }
+  }
+
+  Object.entries(count).forEach(([key, value]) => {
+    if (value === highest) {
+      result.push(parseInt(key, 10));
+    }
+  });
+
+  return result;
 }
