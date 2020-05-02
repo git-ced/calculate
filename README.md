@@ -154,6 +154,20 @@ median(...[21, 4, 8, 6, 12]);
 // output: 8
 ```
 
+Getting the mode of given numbers.
+```javascript
+import { mode } from '@princedev/calculate';
+
+mode(2, 1, 8, 3, 2, 7, 4, 2, 6, 8);
+// output [2]
+
+mode(2, 1, 8, 3, 2, 7, 4, 2, 6, 8, 8);
+// output [2,8]
+
+mode(...[2, 1, 8, 3, 2, 7, 4, 2, 6, 8]);
+// output [2,8]
+```
+
 ### Sorting numbers and strings
 
 Sorting numbers

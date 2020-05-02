@@ -1,5 +1,5 @@
 // ANCHOR Types
-import { n, s } from 'types';
+import { n, s, kn } from 'types';
 
 // ANCHOR Sort
 import { smartSort } from './sort';
@@ -318,7 +318,7 @@ export function median(...args: n[]) {
 // ANCHOR Calculate the mode --------------------------------------------------/
 export function mode(...args: n[]) {
   let highest = 0;
-  let count: { [key: string]: n } = {};
+  let count: kn = {};
   let result: n[] = [];
   let length = args.length;
 
