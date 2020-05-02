@@ -41,10 +41,6 @@ const calculate = require('@princedev/calculate');
 
 ### ES6
 ```javascript
-import calculate from '@princedev/calculate';
-
-// or
-
 import { sum } from '@princedev/calculate';
 ```
 
@@ -185,10 +181,7 @@ range(...[2, 1, 8, 3, 2, 7, 8, 2, 6, 8]);
 ```javascript
 import { sort } from '@princedev/calculate'
 
-sort(6, 2, 218, 12, 523);
-// output: [2,6,12,218,523]
-
-sort(...[6,2,218,12,523]);
+sort([6,2,218,12,523]);
 // output: [2,6,12,218,523]
 ```
 
@@ -196,10 +189,7 @@ sort(...[6,2,218,12,523]);
 ```javascript
 import { sort } from '@princedev/calculate'
 
-sort('1000', 'A100', 'B200', '2000', 'A1000');
-// output: ["1000", "2000", "A100", "A1000", "B200"]
-
-sort(...['1000', 'A100', 'B200', '2000', 'A1000']);
+sort(['1000', 'A100', 'B200', '2000', 'A1000']);
 // output: ["1000", "2000", "A100", "A1000", "B200"]
 ```
 

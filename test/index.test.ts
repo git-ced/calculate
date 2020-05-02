@@ -1,4 +1,3 @@
-import { insertionSort, quicksort } from './../src/sort';
 import {
   sum,
   difference,
@@ -10,6 +9,8 @@ import {
   sort,
   mode,
   range,
+  insertionSort,
+  quicksort,
 } from '../src';
 
 describe('Math', () => {
@@ -77,10 +78,10 @@ describe('Sort', () => {
     ]);
   });
   it('Default Number', () => {
-    expect(sort(6, 2, 7, 12, 523)).toEqual([2, 6, 7, 12, 523]);
+    expect(sort([6, 2, 7, 12, 523])).toEqual([2, 6, 7, 12, 523]);
   });
   it('Default String', () => {
-    expect(sort('1000', 'A100', 'B200', '2000', 'A1000')).toEqual([
+    expect(sort(['1000', 'A100', 'B200', '2000', 'A1000'])).toEqual([
       '1000',
       '2000',
       'A100',
