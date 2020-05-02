@@ -52,7 +52,7 @@ import { sum } from '@princedev/calculate';
 
 ### Let's start with basic arithmetics
 
-Getting the sum of given numbers.
+**Getting the sum of given numbers.**
 ```javascript
 import { sum } from '@princedev/calculate';
 
@@ -66,7 +66,7 @@ sum(...[12,24,36,48,60,72,84,96,108,120,132]);
 // output: 792
 ```
 
-Can also be done in this way.
+**Can also be done in this way.**
 ```javascript
 import calculate from '@princedev/calculate';
 
@@ -77,7 +77,7 @@ calculate.sum(12,24,36,48,60,72,84,96,108,120,132)
 // output: 792
 ```
 
-Getting the difference of given numbers.
+**Getting the difference of given numbers.**
 ```javascript
 import { difference } from '@princedev/calculate';
 
@@ -88,7 +88,7 @@ difference(24,12,8);
 // output: 4
 ```
 
-Getting the product of given numbers.
+**Getting the product of given numbers.**
 ```javascript
 import { product } from '@princedev/calculate';
 
@@ -99,7 +99,7 @@ product(-2,-4,6);
 // output: 48
 ```
 
-Getting the quotient of given numbers.
+**Getting the quotient of given numbers.**
 ```javascript
 import { quotient } from '@princedev/calculate';
 
@@ -110,7 +110,7 @@ quotient(8, 4, 2);
 // output: 1
 ```
 
-Getting the remainder of given numbers.
+**Getting the remainder of given numbers.**
 ```javascript
 import { remainder } from '@princedev/calculate';
 
@@ -123,7 +123,7 @@ remainder(4, 3, 3);
 
 ### Now with basic statistics
 
-Getting the mean of given numbers.
+**Getting the mean of given numbers.**
 ```javascript
 import { mean } from '@princedev/calculate';
 
@@ -137,7 +137,7 @@ mean(...[2, 4, 6]);
 // output: 4
 ```
 
-Getting the median of given numbers.
+**Getting the median of given numbers.**
 ```javascript
 import { median } from '@princedev/calculate';
 
@@ -154,7 +154,7 @@ median(...[21, 4, 8, 6, 12]);
 // output: 8
 ```
 
-Getting the mode of given numbers.
+**Getting the mode of given numbers.**
 ```javascript
 import { mode } from '@princedev/calculate';
 
@@ -170,7 +170,7 @@ mode(...[2, 1, 8, 3, 2, 7, 4, 2, 6, 8]);
 
 ### Sorting numbers and strings
 
-Sorting numbers
+**Sorting numbers**
 ```javascript
 import { sort } from '@princedev/calculate'
 
@@ -181,7 +181,7 @@ sort(...[6,2,218,12,523]);
 // output: [2,6,12,218,523]
 ```
 
-Sorting strings
+**Sorting strings**
 ```javascript
 import { sort } from '@princedev/calculate'
 

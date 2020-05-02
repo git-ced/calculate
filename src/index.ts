@@ -346,3 +346,9 @@ export function mode(...args: n[]) {
 
   return result;
 }
+
+// ANCHOR Calculate the range -------------------------------------------------/
+export function range(...args: n[]) {
+  smartSort(args);
+  return args[args.length - 1] - args[0];
+}
