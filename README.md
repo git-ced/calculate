@@ -168,6 +168,17 @@ mode(...[2, 1, 8, 3, 2, 7, 4, 2, 6, 8]);
 // output [2,8]
 ```
 
+**Getting the range of given numbers**
+```javascript
+import { range } from '@princedev/calculate';
+
+range(2, 1, 8, 3, 2, 7, 8, 2, 6, 8);
+// output 7
+
+range(...[2, 1, 8, 3, 2, 7, 8, 2, 6, 8]);
+// output 7
+```
+
 ### Sorting numbers and strings
 
 **Sorting numbers**
