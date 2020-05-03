@@ -1,3 +1,5 @@
+import leastArguments from '../_utils/leastArguments';
+
 /**
  * @name product
  * @summary Gets the product.
@@ -43,9 +45,8 @@ export default function product(
   const argLength = arguments.length;
   switch (argLength) {
     case 0:
-      return 0;
     case 1:
-      return a;
+      return leastArguments(2, argLength);
     case 2:
       return a * b;
     case 3:
