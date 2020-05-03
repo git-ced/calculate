@@ -5,6 +5,7 @@ export { default as product } from './product';
 export { default as quotient } from './quotient';
 export { default as remainder } from './remainder';
 export { default as square } from './sqaure';
+export { default as cube } from './cube';
 // ANCHOR Statistics
 export { default as mean } from './mean';
 export { default as median } from './median';

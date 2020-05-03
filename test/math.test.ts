@@ -1,4 +1,12 @@
-import { sum, difference, product, quotient, remainder, square } from '../src';
+import {
+  sum,
+  difference,
+  product,
+  quotient,
+  remainder,
+  square,
+  cube,
+} from '../src';
 
 describe('Math', () => {
   it('Sum', () => {
@@ -18,5 +26,8 @@ describe('Math', () => {
   });
   it('Square', () => {
     expect(square(-8)).toEqual(64);
+  });
+  it('Cube', () => {
+    expect(cube(2)).toEqual(8);
   });
 });
