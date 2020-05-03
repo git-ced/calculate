@@ -13,5 +13,5 @@
  * @returns {number}
  */
 export default function cube(a: number): number {
-  return a * a * a;
+  return a ** 3;
 }

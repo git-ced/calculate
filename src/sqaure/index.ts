@@ -13,5 +13,5 @@
  * @returns {number}
  */
 export default function square(a: number): number {
-  return a * a;
+  return a ** 2;
 }

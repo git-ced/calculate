@@ -6,6 +6,7 @@ import {
   remainder,
   square,
   cube,
+  power,
 } from '../src';
 
 describe('Math', () => {
@@ -29,5 +30,8 @@ describe('Math', () => {
   });
   it('Cube', () => {
     expect(cube(2)).toEqual(8);
+  });
+  it('Power', () => {
+    expect(power(2, 5, 2)).toEqual(1024);
   });
 });
