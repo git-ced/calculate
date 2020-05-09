@@ -1,3 +1,5 @@
+type sn = string[] | number[];
+
 /**
  * @name insertionSort
  * @summary Sorts the list using insertion sort.
@@ -15,24 +17,25 @@
  *
  * @param {Array<number> | Array<string>} args - array to be sorted.
  * @returns {Array<number> | Array<string>} - the sorted array in ascending order.
+ *
+ * @function pure
  */
+export default function insertionSort(args: sn): sn {
+  const arr = args.slice(0);
 
-export default function insertionSort(
-  args: string[] | number[]
-): string[] | number[] {
-  let length = args.length;
+  const length = arr.length;
 
   for (let i = 1; i < length; i++) {
-    let key = args[i];
+    let key = arr[i];
     let j = i - 1;
 
-    while (j >= 0 && args[j] > key) {
-      args[j + 1] = args[j];
+    while (j >= 0 && arr[j] > key) {
+      arr[j + 1] = arr[j];
       j = j - 1;
     }
 
-    args[j + 1] = key;
+    arr[j + 1] = key;
   }
 
-  return args;
+  return arr;
 }

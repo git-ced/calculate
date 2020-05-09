@@ -14,11 +14,18 @@ import sort from '../sort';
  * let result = range(...[10,20,30]);
  * // => 20
  *
- * @param {Array<number>} args - given numbers
- * @returns {number} - the resulting range
+ * @param {Array<number>} args given numbers
+ * @returns {number} the resulting range
+ *
+ * @function pure
  */
 
 export default function range(...args: number[]): number {
-  sort(args);
-  return args[args.length - 1] - args[0];
+  const sortedArr = sort(args) as number[];
+
+  const arr = sortedArr.slice(0);
+
+  const result = arr[arr.length - 1] - arr[0];
+
+  return result;
 }

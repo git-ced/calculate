@@ -13,18 +13,22 @@
  * let result = mode(...[2, 1, 8, 3, 2, 7, 4, 2, 6, 8]);
  * // => [2]
  *
- * @param {Array<number>} args - given numbers.
- * @returns {Array<number>} - the resulting mode.
+ * @param {Array<number>} args given numbers.
+ * @returns {Array<number>} the resulting mode.
+ *
+ * @function pure
  */
 
 export default function mode(...args: number[]): number[] {
+  const arr = args.slice(0);
+
   let highest = 0;
   let count: { [key: string]: number } = {};
   let result: number[] = [];
-  let length = args.length;
+  let length = arr.length;
 
   while (length) {
-    const number = args[--length];
+    const number = arr[--length];
 
     if (!count[number]) {
       count[number] = 1;

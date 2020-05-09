@@ -8,25 +8,27 @@ import leastArguments from '../_utils/leastArguments';
  *
  * @example
  * // Normal usage
- * let result = sum(10,20,30);
+ * let return sum(10,20,30);
  * // => 60
  *
  * // Using an array
- * let result = sum(...[10,20,30]);
+ * let return sum(...[10,20,30]);
  * // => 60
  *
- * @param {number} a - first number.
- * @param {number} b - second number.
- * @param {number} c - third number.
- * @param {number} d - fourth number.
- * @param {number} e - fifth number.
- * @param {number} f - sixth number.
- * @param {number} g - seventh number.
- * @param {number} h - eighth number.
- * @param {number} i - ninth number.
- * @param {number} j - tenth number.
- * @param {Array<number>} args - rest of the arguments.
- * @returns {number} - the resulting sum.
+ * @param {number} a first number.
+ * @param {number} b second number.
+ * @param {number} c third number.
+ * @param {number} d fourth number.
+ * @param {number} e fifth number.
+ * @param {number} f sixth number.
+ * @param {number} g seventh number.
+ * @param {number} h eighth number.
+ * @param {number} i ninth number.
+ * @param {number} j tenth number.
+ * @param {Array<number>} args rest of the arguments.
+ * @returns {number} the resulting sum.
+ *
+ * @function pure
  */
 
 export default function sum(
@@ -43,10 +45,9 @@ export default function sum(
   ...args: number[]
 ): number {
   const argLength = arguments.length;
+  leastArguments(2, argLength);
+
   switch (argLength) {
-    case 0:
-    case 1:
-      return leastArguments(2, argLength);
     case 2:
       return a + b;
     case 3:
@@ -66,11 +67,16 @@ export default function sum(
     case 10:
       return a + b + c + d + e + f + g + h + i + j;
     default: {
-      let length = args.length;
+      const num = args.slice(0);
+
+      let length = num.length;
+
       let result = a + b + c + d + e + f + g + h + i + j;
+
       while (length) {
-        result += args[--length];
+        result += num[--length];
       }
+
       return result;
     }
   }

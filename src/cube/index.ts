@@ -11,6 +11,8 @@
  *
  * @param {numberr} a - number to be cubed.
  * @returns {number}
+ *
+ * @function pure
  */
 export default function cube(a: number): number {
   return a ** 3;

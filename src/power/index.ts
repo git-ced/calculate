@@ -11,19 +11,20 @@ import leastArguments from '../_utils/leastArguments';
  * let result = power(2,5,2); // the same as ((2)^5)^2
  * // => 1024
  *
- * @param {number} a - first number.
- * @param {number} b - second number.
- * @param {number} c - third number.
- * @param {number} d - fourth number.
- * @param {number} e - fifth number.
- * @param {number} f - sixth number.
- * @param {number} g - seventh number.
- * @param {number} h - eighth number.
- * @param {number} i - ninth number.
- * @param {number} j - tenth number.
- * @param {Array<number>} args - rest of the arguments.
- * @returns {number} - the power
- * @throws {TypeError}
+ * @param {number} a first number.
+ * @param {number} b second number.
+ * @param {number} c third number.
+ * @param {number} d fourth number.
+ * @param {number} e fifth number.
+ * @param {number} f sixth number.
+ * @param {number} g seventh number.
+ * @param {number} h eighth number.
+ * @param {number} i ninth number.
+ * @param {number} j tenth number.
+ * @param {Array<number>} args rest of the arguments.
+ * @returns {number} the power
+ *
+ * @function pure
  */
 export default function power(
   a: number,
@@ -39,10 +40,9 @@ export default function power(
   ...args: number[]
 ): number {
   const argLength = arguments.length;
+  leastArguments(2, argLength);
+
   switch (argLength) {
-    case 0:
-    case 1:
-      return leastArguments(2, argLength);
     case 2:
       return a ** b;
     case 3:
@@ -62,12 +62,17 @@ export default function power(
     case 10:
       return ((((((((a ** b) ** c) ** d) ** e) ** f) ** g) ** h) ** i) ** j;
     default: {
-      let length = args.length;
+      const num = args.slice(0);
+
+      let length = num.length;
+
       let result =
         ((((((((a ** b) ** c) ** d) ** e) ** f) ** g) ** h) ** i) ** j;
+
       while (length) {
-        result **= args[--length];
+        result **= num[--length];
       }
+
       return result;
     }
   }
