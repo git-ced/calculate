@@ -32,6 +32,7 @@
   "name": "@princedev/calculate",
   "author": "Prince Neil Cedrick Castro",
   "module": "dist/calculate.esm.js",
+  "sideEffects": false,
   "devDependencies": {
     "husky": "^4.2.5",
     "tsdx": "^0.13.2",
@@ -43,12 +44,15 @@
   "bugs": {
     "url": "https://github.com/git-ced/calculate/issues"
   },
-  "homepage": "https://github.com/git-ced/calculate",
+  "homepage": "https://git-ced.github.io/calculate-docs/",
   "keywords": [
     "math",
     "statistics",
     "calculate",
-    "compute"
+    "compute",
+    "arithmetics",
+    "fast",
+    "pure"
   ],
   "description": "Fast, lightweight, and extinsible mathematical and statistical functions."
 }
