@@ -1,4 +1,4 @@
-import sort from '../sort';
+import immutableSort from '../_utils/immutableSort';
 
 /**
  * @name range
@@ -21,7 +21,7 @@ import sort from '../sort';
  */
 
 export default function range(...args: number[]): number {
-  const sortedArr = sort(args) as number[];
+  const sortedArr = immutableSort(args);
 
   const arr = sortedArr.slice(0);
 

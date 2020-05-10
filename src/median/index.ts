@@ -1,4 +1,4 @@
-import sort from '../sort';
+import immutableSort from '../_utils/immutableSort';
 
 /**
  * @name median
@@ -22,15 +22,13 @@ import sort from '../sort';
  */
 
 export default function median(...args: number[]): number {
-  const sortedArr = sort(args) as number[];
+  const sortedArr = immutableSort(args);
 
-  const arr = sortedArr.slice(0);
-
-  const length = arr.length;
+  const length = sortedArr.length;
 
   if (length % 2 === 0) {
-    return (arr[length / 2 - 1] + arr[length / 2]) / 2;
+    return (sortedArr[length / 2 - 1] + sortedArr[length / 2]) / 2;
   }
 
-  return arr[(length - 1) / 2];
+  return sortedArr[(length - 1) / 2];
 }

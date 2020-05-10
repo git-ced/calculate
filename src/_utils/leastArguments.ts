@@ -3,7 +3,7 @@
  *
  * @description - Throws error when number of arguments recieved did not meet expected minimum.
  *
- *  @param {number} required required number of arguments.
+ * @param {number} required required number of arguments.
  * @param {Array<any>} argument arguments received.
  */
 export default function leastArguments(

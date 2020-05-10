@@ -12,7 +12,3 @@ export { default as mean } from './mean';
 export { default as median } from './median';
 export { default as mode } from './mode';
 export { default as range } from './range';
-// ANCHOR Sort
-export { default as sort } from './sort';
-export { default as insertionSort } from './insertionSort';
-export { default as quicksort } from './quicksort';
