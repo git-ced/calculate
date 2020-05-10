@@ -7,6 +7,7 @@ import {
   square,
   cube,
   power,
+  factorial,
 } from '../src';
 
 describe('Math', () => {
@@ -33,5 +34,14 @@ describe('Math', () => {
   });
   it('Power', () => {
     expect(power(2, 5, 2)).toEqual(1024);
+  });
+  it('Factorial 0', () => {
+    expect(factorial(0)).toEqual(1);
+  });
+  it('Factorial 1', () => {
+    expect(factorial(1)).toEqual(1);
+  });
+  it('Factorial 4', () => {
+    expect(factorial(4)).toEqual(24);
   });
 });

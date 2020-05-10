@@ -7,6 +7,7 @@ export { default as remainder } from './remainder';
 export { default as square } from './sqaure';
 export { default as cube } from './cube';
 export { default as power } from './power';
+export { default as factorial } from './factorial';
 // ANCHOR Statistics
 export { default as mean } from './mean';
 export { default as median } from './median';
