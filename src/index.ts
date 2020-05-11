@@ -11,6 +11,7 @@ export { default as power } from './power';
 export { default as factorial } from './factorial';
 export { default as negate } from './negate';
 export { default as quadratic } from './quadratic';
+export { default as distance } from './distance';
 // ANCHOR Statistics
 export { default as mean } from './mean';
 export { default as median } from './median';

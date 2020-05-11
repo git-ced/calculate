@@ -11,6 +11,7 @@ import {
   squareRoot,
   negate,
   quadratic,
+  distance,
 } from '../src';
 
 describe('Math', () => {
@@ -67,5 +68,11 @@ describe('Math', () => {
   });
   it('Quadratic N', () => {
     expect(quadratic(4, 4, 1).secondRoot).toEqual(-0.5);
+  });
+  it('Distance', () => {
+    expect(distance(2, 4, 6, 8)).toEqual(2.8284271247461903);
+  });
+  it('Distance 0', () => {
+    expect(distance(2, 2, 4, 4)).toEqual(0);
   });
 });

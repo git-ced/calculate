@@ -32,7 +32,6 @@
   "name": "@princedev/calculate",
   "author": "Prince Neil Cedrick Castro",
   "module": "dist/calculate.esm.js",
-  "sideEffects": false,
   "devDependencies": {
     "husky": "^4.2.5",
     "tsdx": "^0.13.2",
