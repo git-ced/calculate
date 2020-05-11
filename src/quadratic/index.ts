@@ -14,20 +14,20 @@ export interface IRoot {
 }
 
 /**
- * @name quotient
- * @summary Gets the quotient.
+ * @name quadratic
+ * @summary Gets the root.
  *
- * @description Divides given numbers from left to right.
+ * @description Returns the first and second root of a quadratice equation
  *
  * @example
  * // Normal usage
- * let result = quotient(8,4,2);
- * // => 1
+ * let result = root(4,4,1);
+ * // => {firstRoot: -0.5, secondRoot: -0.5}
  *
  * @param {number} a
  * @param {number} b
  * @param {number} c
- * @returns {IRoot} the resulting quotient.
+ * @returns {IRoot} the resulting root.
  *
  * @function pure
  */
