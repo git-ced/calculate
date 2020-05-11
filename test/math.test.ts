@@ -8,6 +8,9 @@ import {
   cube,
   power,
   factorial,
+  squareRoot,
+  negate,
+  quadratic,
 } from '../src';
 
 describe('Math', () => {
@@ -26,6 +29,15 @@ describe('Math', () => {
   it('Remainder', () => {
     expect(remainder(8, 4, 2)).toEqual(0);
   });
+  it('Square Root 0', () => {
+    expect(squareRoot(0)).toEqual(0);
+  });
+  it('Square Root Negative', () => {
+    expect(squareRoot(-1)).toEqual(NaN);
+  });
+  it('Square Root', () => {
+    expect(squareRoot(15)).toEqual(3.872983346207417);
+  });
   it('Square', () => {
     expect(square(-8)).toEqual(64);
   });
@@ -43,5 +55,17 @@ describe('Math', () => {
   });
   it('Factorial 4', () => {
     expect(factorial(4)).toEqual(24);
+  });
+  it('Negate P', () => {
+    expect(negate(4)).toEqual(-4);
+  });
+  it('Negate N', () => {
+    expect(negate(-4)).toEqual(4);
+  });
+  it('Quadratic P', () => {
+    expect(quadratic(4, 4, 1).firstRoot).toEqual(-0.5);
+  });
+  it('Quadratic N', () => {
+    expect(quadratic(4, 4, 1).secondRoot).toEqual(-0.5);
   });
 });
