@@ -1,12 +1,6 @@
 import exactArguments from '../_utils/exactArguments';
 import notAllowed from '../_utils/notAllowed';
-import negate from '../negate';
 import squareRoot from '../squareRoot';
-import sum from '../sum';
-import difference from '../difference';
-import square from '../square';
-import quotient from '../quotient';
-import product from '../product';
 
 export interface IRoot {
   firstRoot: number;
@@ -36,18 +30,13 @@ export default function quadratic(a: number, b: number, c: number): IRoot {
   exactArguments(3, arguments);
   notAllowed({ a }, 0);
 
-  const bNegate = negate(b);
-  const bSquared = square(b);
-  const fourAC = product(4, a, c);
-  const twiceA = product(a, 2);
-
-  const bSquaredMinusFourAC = difference(bSquared, fourAC);
-  const rSquareRoot = squareRoot(bSquaredMinusFourAC);
-  const plusUp = sum(bNegate, rSquareRoot);
-  const minusUp = difference(bNegate, rSquareRoot);
+  const bSquared = b * b;
+  const fourAC = 4 * a * c;
+  const twiceA = a * 2;
+  const rSquareRoot = squareRoot(bSquared - fourAC);
 
   return {
-    firstRoot: quotient(plusUp, twiceA),
-    secondRoot: quotient(minusUp, twiceA),
+    firstRoot: (-b + rSquareRoot) / twiceA,
+    secondRoot: (-b - rSquareRoot) / twiceA,
   };
 }

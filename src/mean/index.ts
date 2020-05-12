@@ -1,6 +1,5 @@
 import leastArguments from '../_utils/leastArguments';
 import sum from '../sum';
-import quotient from '../quotient';
 
 /**
  * @name mean
@@ -26,7 +25,5 @@ import quotient from '../quotient';
 export default function mean(...args: number[]): number {
   leastArguments(2, arguments);
 
-  const argSum = sum(...args);
-
-  return quotient(argSum, arguments.length);
+  return sum(...args) / arguments.length;
 }

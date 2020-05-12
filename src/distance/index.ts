@@ -1,7 +1,5 @@
 import exactArguments from '../_utils/exactArguments';
 import squareRoot from '../squareRoot';
-import sum from '../sum';
-import difference from '../difference';
 import square from '../square';
 
 /**
@@ -32,11 +30,5 @@ export default function distance(
 ): number {
   exactArguments(4, arguments);
 
-  const differenceX = difference(x1, x2);
-  const differenceY = difference(y1, y2);
-  const squareDiffX = square(differenceX);
-  const squareDiffY = square(differenceY);
-  const sumXY = sum(squareDiffX, squareDiffY);
-
-  return squareRoot(sumXY);
+  return squareRoot(square(x1 - x2) + square(y1 - y2));
 }

@@ -2,8 +2,8 @@
 > Fast, lightweight, and extinsible mathematical and statistical functions.
 
 [![NPM](https://img.shields.io/npm/v/@princedev/calculate.svg)](https://www.npmjs.com/package/@princedev/calculate)
-![npm bundle size (scoped)](https://img.shields.io/bundlephobia/min/@princedev/calculate/1.1.4)
-![npm bundle size (scoped version)](https://img.shields.io/bundlephobia/minzip/@princedev/calculate/1.1.4)
+![npm bundle size (scoped)](https://img.shields.io/bundlephobia/min/@princedev/calculate)
+![npm bundle size (scoped version)](https://img.shields.io/bundlephobia/minzip/@princedev/calculate)
 ![Libraries.io dependency status for latest release, scoped npm package](https://img.shields.io/librariesio/release/npm/@princedev/calculate)
 ![NPM](https://img.shields.io/npm/l/@princedev/calculate)
 
