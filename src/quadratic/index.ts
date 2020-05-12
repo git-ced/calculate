@@ -39,16 +39,15 @@ export default function quadratic(a: number, b: number, c: number): IRoot {
   const bNegate = negate(b);
   const bSquared = square(b);
   const fourAC = product(4, a, c);
+  const twiceA = product(a, 2);
+
   const bSquaredMinusFourAC = difference(bSquared, fourAC);
   const rSquareRoot = squareRoot(bSquaredMinusFourAC);
   const plusUp = sum(bNegate, rSquareRoot);
   const minusUp = difference(bNegate, rSquareRoot);
-  const twiceA = product(a, 2);
-  const firstRoot = quotient(plusUp, twiceA);
-  const secondRoot = quotient(minusUp, twiceA);
 
   return {
-    firstRoot,
-    secondRoot,
+    firstRoot: quotient(plusUp, twiceA),
+    secondRoot: quotient(minusUp, twiceA),
   };
 }

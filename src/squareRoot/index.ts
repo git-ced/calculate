@@ -18,5 +18,6 @@ import exactArguments from '../_utils/exactArguments';
  */
 export default function sqaureRoot(a: number): number {
   exactArguments(1, arguments);
+
   return a ** 0.5;
 }

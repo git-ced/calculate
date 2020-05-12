@@ -1,4 +1,5 @@
 import immutableSort from '../_utils/immutableSort';
+import difference from '../difference';
 
 /**
  * @name range
@@ -23,9 +24,7 @@ import immutableSort from '../_utils/immutableSort';
 export default function range(...args: number[]): number {
   const sortedArr = immutableSort(args);
 
-  const arr = sortedArr.slice(0);
+  const highestIndex = difference(sortedArr.length, 1);
 
-  const result = arr[arr.length - 1] - arr[0];
-
-  return result;
+  return difference(sortedArr[highestIndex], sortedArr[0]);
 }

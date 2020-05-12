@@ -20,28 +20,19 @@
  */
 
 export default function mode(...args: number[]): number[] {
-  const arr = args.slice(0);
-
-  let highest = 0;
   let count: { [key: string]: number } = {};
   let result: number[] = [];
-  let length = arr.length;
 
-  while (length) {
-    const number = arr[--length];
-
-    if (!count[number]) {
-      count[number] = 1;
-      highest = 1;
-      continue;
+  args.forEach(num => {
+    if (!count[num]) {
+      count[num] = 1;
+      return;
     }
 
-    count[number] = count[number] + 1;
+    count[num] += 1;
+  });
 
-    if (highest < count[number]) {
-      highest = count[number];
-    }
-  }
+  const highest = Math.max.apply(null, Object.values(count));
 
   Object.entries(count).forEach(([key, value]) => {
     if (value === highest) {

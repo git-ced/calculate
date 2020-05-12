@@ -23,5 +23,6 @@ import leastArguments from '../_utils/leastArguments';
 
 export default function quotient(...args: number[]): number {
   leastArguments(2, arguments);
+
   return args.reduce((a, b) => a / b);
 }

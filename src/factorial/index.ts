@@ -18,6 +18,7 @@ import exactArguments from '../_utils/exactArguments';
  */
 export default function factorial(a: number): number {
   exactArguments(1, arguments);
+
   return factorialStep(a);
 }
 

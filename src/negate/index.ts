@@ -21,5 +21,6 @@ import exactArguments from '../_utils/exactArguments';
  */
 export default function negate(a: number): number {
   exactArguments(1, arguments);
+
   return -a;
 }

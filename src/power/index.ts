@@ -18,5 +18,6 @@ import leastArguments from '../_utils/leastArguments';
  */
 export default function power(...args: number[]): number {
   leastArguments(2, arguments);
+
   return args.reduce((a, b) => a ** b);
 }
