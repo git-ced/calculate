@@ -2,9 +2,9 @@ import exactArguments from '../_utils/exactArguments';
 
 /**
  * @name square
- * @summary Gets the square of a number.
+ * @summary Returns the square of a number.
  *
- * @description Gets the square of a number.
+ * @description Returns the square of a number.
  *
  * @example
  * // Normal usage

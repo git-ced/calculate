@@ -2,7 +2,7 @@ import exactArguments from '../_utils/exactArguments';
 
 /**
  * @name negate
- * @summary Gets the negated value.
+ * @summary Returns the negated value.
  *
  * @description Returns a same number with an opposite sign.
  *

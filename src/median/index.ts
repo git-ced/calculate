@@ -2,7 +2,7 @@ import immutableSort from '../_utils/immutableSort';
 
 /**
  * @name median
- * @summary Gets the median.
+ * @summary Returns the median.
  *
  * @description Arranges the numbers in order and gets the number halfway the list.
  *

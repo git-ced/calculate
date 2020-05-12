@@ -2,9 +2,9 @@ import exactArguments from '../_utils/exactArguments';
 
 /**
  * @name cube
- * @summary Gets the cube of a number.
+ * @summary Returns the cube of a number.
  *
- * @description Gets the cube of a number.
+ * @description Returns the cube of a number.
  *
  * @example
  * // Normal usage

@@ -9,7 +9,7 @@ export interface IRoot {
 
 /**
  * @name quadratic
- * @summary Gets the root.
+ * @summary Returns the root.
  *
  * @description Returns the first and second root of a quadratice equation
  *

@@ -2,7 +2,7 @@ import leastArguments from '../_utils/leastArguments';
 
 /**
  * @name remainder
- * @summary Gets the remainder.
+ * @summary Returns the remainder.
  *
  * @description Divides given numbers from left to right and gets its remainder.
  *

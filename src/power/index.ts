@@ -2,9 +2,9 @@ import leastArguments from '../_utils/leastArguments';
 
 /**
  * @name power
- * @summary Gets the power.
+ * @summary Returns the power.
  *
- * @description Gets the power of given base (left most) raise to its succeeding numbers.
+ * @description Returns the power of given base (left most) raise to its succeeding numbers.
  *
  * @example
  * // Normal usage

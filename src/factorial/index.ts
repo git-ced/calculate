@@ -2,9 +2,9 @@ import exactArguments from '../_utils/exactArguments';
 
 /**
  * @name factorial
- * @summary Gets the factorial of a number.
+ * @summary Returns the factorial of a number.
  *
- * @description Gets the factorial of a number.
+ * @description Returns the factorial of a number.
  *
  * @example
  * // Normal usage

@@ -2,7 +2,7 @@ import leastArguments from '../_utils/leastArguments';
 
 /**
  * @name product
- * @summary Gets the product.
+ * @summary Returns the product.
  *
  * @description Multiplies given numbers from left to right.
  *

@@ -2,7 +2,7 @@ import leastArguments from '../_utils/leastArguments';
 
 /**
  * @name difference
- * @summary Gets the difference.
+ * @summary Returns the difference.
  *
  * @description Subtracts given numbers from left to right.
  *

@@ -4,9 +4,9 @@ import square from '../square';
 
 /**
  * @name distance
- * @summary Gets the distance between two points.
+ * @summary Returns the distance between two points.
  *
- * @description Gets the distance between two points in a cartesian plane.
+ * @description Returns the distance between two points in a cartesian plane.
  *
  * @example
  * // Normal usage

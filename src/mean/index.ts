@@ -3,7 +3,7 @@ import sum from '../sum';
 
 /**
  * @name mean
- * @summary Gets the mean (average).
+ * @summary Returns the mean (average).
  *
  * @description Adds given numbers from left to right and divides the sum by the amount of the numbers.
  *

@@ -12,6 +12,8 @@ import {
   negate,
   quadratic,
   distance,
+  max,
+  min,
 } from '../src';
 
 describe('Math', () => {
@@ -74,5 +76,11 @@ describe('Math', () => {
   });
   it('Distance 0', () => {
     expect(distance(2, 2, 4, 4)).toEqual(0);
+  });
+  it('Max', () => {
+    expect(max(10, 6, -2, 4, 8)).toEqual(10);
+  });
+  it('Min 0', () => {
+    expect(min(-2, 2, -4, 4)).toEqual(-4);
   });
 });

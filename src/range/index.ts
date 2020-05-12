@@ -2,9 +2,9 @@ import immutableSort from '../_utils/immutableSort';
 
 /**
  * @name range
- * @summary Gets the range
+ * @summary Returns the range
  *
- * @description Gets the difference of the highest and lowest number in the given numbers
+ * @description Returns the difference of the highest and lowest number in the given numbers
  *
  * @example
  * // Normal usage

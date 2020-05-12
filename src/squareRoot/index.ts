@@ -2,13 +2,13 @@ import exactArguments from '../_utils/exactArguments';
 
 /**
  * @name sqaureRoot
- * @summary Gets the sqaure root of a number.
+ * @summary Returns the sqaure root of a number.
  *
- * @description Gets the sqaure root of a number.
+ * @description Returns the sqaure root of a number.
  *
  * @example
  * // Normal usage
- * let result = sqaure(16);
+ * let result = sqaureRoot(16);
  * // => 4
  *
  * @param {numberr} a number to be solved.

@@ -2,7 +2,7 @@ import leastArguments from '../_utils/leastArguments';
 
 /**
  * @name sum
- * @summary Gets the sum.
+ * @summary Returns the sum.
  *
  * @description Adds given numbers from left to right.
  *

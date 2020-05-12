@@ -2,7 +2,7 @@ import leastArguments from '../_utils/leastArguments';
 
 /**
  * @name quotient
- * @summary Gets the quotient.
+ * @summary Returns the quotient.
  *
  * @description Divides given numbers from left to right.
  *

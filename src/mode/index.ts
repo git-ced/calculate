@@ -1,8 +1,8 @@
 /**
  * @name mode
- * @summary Gets the mode.
+ * @summary Returns the mode.
  *
- * @description Gets the highest occuring number/s in a given numbers.
+ * @description Returns the highest occuring number/s in a given numbers.
  *
  * @example
  * // Normal usage
