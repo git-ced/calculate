@@ -14,6 +14,7 @@ import {
   distance,
   max,
   min,
+  absolute,
 } from '../src';
 
 describe('Math', () => {
@@ -82,5 +83,8 @@ describe('Math', () => {
   });
   it('Min 0', () => {
     expect(min(-2, 2, -4, 4)).toEqual(-4);
+  });
+  it('Absolute', () => {
+    expect(absolute(-3)).toEqual(3);
   });
 });
