@@ -1,4 +1,5 @@
 import immutableSort from '../_utils/immutableSort';
+import leastArguments from '../_utils/leastArguments';
 
 /**
  * @name min
@@ -17,6 +18,8 @@ import immutableSort from '../_utils/immutableSort';
  * @function pure
  */
 export default function min(...args: number[]): number {
+  leastArguments(1, arguments);
+
   const sortedArray = immutableSort(args);
 
   return sortedArray[0];

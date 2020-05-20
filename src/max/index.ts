@@ -1,4 +1,5 @@
 import immutableSort from '../_utils/immutableSort';
+import leastArguments from '../_utils/leastArguments';
 
 /**
  * @name max
@@ -17,6 +18,8 @@ import immutableSort from '../_utils/immutableSort';
  * @function pure
  */
 export default function max(...args: number[]): number {
+  leastArguments(1, arguments);
+
   const sortedArray = immutableSort(args);
 
   return sortedArray[sortedArray.length - 1];
